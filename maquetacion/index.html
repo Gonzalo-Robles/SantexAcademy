@@ -4,53 +4,179 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Xacademy Clase 1 maquetacion</title>
-    <style>
-        body {
-            margin: 0;
-        }
-        p {
-            margin-right: 40px;
-        }
-        h1 {
-            margin: 0px 400px;
-            text-align: center;
-        }
-        button.redondo {
-            background-color: white;
-            border: 1px solid black;
-            border-radius: 25px;
-            padding: 0px 20px;
-            height: 32px;
-        }
-        div#introduction-actions {
-            display: flex;
-            justify-content: center;
-        }
-    </style>
+    <title>Cluster 2 - X Academy</title>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <div id="header" style="border-bottom: 1px solid gray; display: flex; padding: 10px 100px; justify-content: space-between">
-        <div id="header-left">
-            <img src="logo.svg">
+<body style="margin: 0;">
+    <header>
+        <div id="navbar">
+            <div id="navbar-left">
+                <img src="./images/technology-with-purpose.svg" href="https://technologywithpurpose.org/">
+            </div>
+            <div id="navbar-right"">
+                <span>Nosotros</span>
+                <span>Programas</span>
+                <span>Capacitaciones</span>
+                <span>Alianzas</span>
+                <span>Contacto</span>
+                <a href="https://donaronline.org/technology-with-purpose-foudation/sumate-genera-impacto" target="_blank">
+                    <button id="buttonNavbar"> Sumate +</button>
+                </a>
+                <span></span>
+                <a href="https://www.instagram.com/technologywithpurpose/" target="_blank">
+                    <img src="./images/instagram.png" alt="Instagram icon" style="width: 15px; height: 15px;">
+                </a>
+                <span></span>
+                <a href="https://www.linkedin.com/company/technologywithpurpose/" target="_blank">
+                    <img src="./images/linkedin.svg" alt="Linkedin icon" style="width: 15px; height: 15px;">
+                </a>
+            </div>
         </div>
-        <div id="header-right" style="display: flex; align-items: center;">
-            <p>Nosotros</p>
-            <p>Programas</p>
-            <p>Capaciontaciones</p>
-            <p>Alianzas</p>
-            <p>Contacto</p>
-            <button class="redondo">Sumate +</button>
+    </header>
+   
+    <br>
+    <br>
+    
+    <div class="grid-layaut-nosotros">
+        <div clas="caja-nosotros"></div> 
+
+        <div clas="caja-nosotros">
+            <h1>
+                Somos una Fundación dedicada a 
+                mejorar la calidad de vida de
+                las personas y su entorno, 
+                a través de la tecnología.
+            </h1> 
+        </div>
+        <div clas="caja-nosotros"></div> 
+        <div clas="caja-nosotros"></div> 
+
+        <div class="caja-nosotros-Botones">
+            <a href="https://technologywithpurpose.org/contacto/">
+                <button id="buttonContactenos"> Contactenos </button>
+            </a>
+            <a href="https://technologywithpurpose.org/contacto/">
+                <button id="buttonSumateVioleta"> Sumate +</button>
+            </a>
         </div>
     </div>
-    <div id="introduction" style="padding: 48px;">
-        <div id="introduction-text">
-            <h1>Somos una Fundación dedicada a mejorar la calidad de vida de las personas y su entorno, a través de la tecnología.</h1>
-        </div>
-        <div id="introduction-actions" style="margin-top: 25px;">
-            <button class="redondo">Contactanos -></button>
-            <button class="redondo" style="margin-left: 14px;">Sumate +</button>
+
+    <br>
+    <br>
+
+    <div class="franja-impacto">
+        <div class="grid-layaut-impacto">
+            <div clas="caja-impacto1">
+                    <h2 style="color:white; text-align: left;">   .Impacto </h2> 
+                    <p style=" color: white; width:400px; text-align: left;">
+                        Buscamos construir alianzas y fortalecer
+                        vínculos para generar una transformación 
+                        real en la comunidad. Trabajamos para
+                        acercar la tecnología innovadora y 
+                        disruptiva del sector privado hacia el 
+                        sector social.  
+                    </p>            
+            </div> 
+            <div clas="caja-impacto1">
+                <span style="color:white; text-align: center;font-size: 50px;"> 58</span>  
+                 
+                <div style="color:#8B929B; text-align: left ;font-size: 14px" >Localidades</div>
+            </div> 
+
+            <div clas="caja-impacto2">
+                <span style="color:white;text-align: left;font-size: 50px;">   + 58</span> 
+                <div style="color:#8B929B; text-align:right ;font-size: 14px; width: 112px;" > Mentores</div>
+            </div> 
+            
+            <div clas="caja-impacto1">
+                <span style="color:white; text-align: left;font-size: 50px">300</span>   
+                <div style="color:#8B929B; text-align: left ;font-size: 14px" > Participantes</div>
+            </div> 
+       
+    </div>
+</div> 
+<div class="imagen-fondo"></div>
+    <br>
+
+<h2>.Programas</h2>
+<div class="grid-programas">
+    <div class="caja-programas-imagen">
+        <img src="./images/xacademy-01-1200x800.jpg" style="width: 500px;height: auto;">
+    </div>
+    <div class="caja-programas-texto">
+        <div>
+            <div>
+                <img src="./images/xacademy.svg" style="width:200px; height: auto;">
+            </div>
+            <div>
+            <p>xAcademy es un programa de formación en 
+                tecnología llevado adelante por la 
+                Fundación Tecnología con Propósito junto 
+                a Santex que busca promover un cambio positivo
+                en la comunidad a través de la educación en IT, 
+                apuntando a lograr la inserción laboral de personas
+                en el mundo tecnológico.
+            </p>
+            </div>
         </div>
     </div>
+</div>
+
+<br>
+
+<div class="grid-robotica">
+    <div class="caja-programas">
+        parrafo
+    </div>
+    <div class="caja-programas">
+        <img src="./images/robotica-educativa-07-1200x800.jpg" style="width: 500px;height: auto;">
+    </div>
+</div>
+
+
+
+
+
+
+<h2>.Capacitaciones</h2>
+<div class="grid-capacitaciones">
+    <div class="caja-capacitaciones-imagen">
+    </div>
+    <div class="caja-capacitaciones-texto">parrafo</div>
+</div>
+
+
+<div class="grid-seguridad">
+    <div class="caja-seguridad">parrafo</div>
+    <div class="caja-seguridad">imagen </div>
+</div>
+
+   
+    <footer>   
+        <div class="container-footer">
+            <div class="row-footer ">
+                <p class="col-md-2"><img src="./images/technology-with-purpose-white.svg">
+                <p class="col-frase">Trabajamos para acercar la tecnología innovadora y disruptiva del sector privado hacia el sector social.</p>
+                <p class="col-md-2">
+                    <a class="Filas-columnas">NOSOTROS</a>
+                    <a class="Filas-columnas">CONTACTO</a>
+                </p>
+                <p class="col-md-2">
+                    <a class="Filas-columnas">PROGRAMAS</a>
+                    <a class="Filas-columnas">CAPACITACIONES</a>
+                </p>
+                <p class="col-md-2">
+                    <a class="Filas-columnas">INSTAGRAM</a>
+                    <a class="Filas-columnas">LINKEDIN</a>
+                </p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
+
+

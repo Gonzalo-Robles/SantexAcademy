@@ -1,0 +1,329 @@
+
+html {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid gray
+  }
+  #navbar{
+    display: flex;
+    justify-content:center;
+    max-width: 100%;
+    width: 100%;
+    height: 80px;
+    
+ }
+ 
+ #navbar-left img {
+     margin-top: 1.2em;  
+     margin-right:400px;
+     
+ }
+ 
+ #navbar-right {
+     display: flex; 
+     align-items: center;
+     margin-right:10px;
+ }
+
+
+
+span {
+    color: black;
+    margin-right: 2em;
+    font-weight: bold;
+    font-size: 0.8em;
+    font-weight: 500;
+}
+span:hover {
+    transition-duration: 200ms;
+    color : rgb(122, 64, 209)
+}
+
+
+.grid-layaut-nosotros{
+    display: grid;
+    text-align:center;
+    grid-template-columns: 25% auto 20%;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.caja-nosotros{
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    line-height:150px;
+    font-size: 0.1em;
+}
+.caja-nosotros-Botones{
+    display: grid; 
+    grid-template-columns: auto auto ;
+    width: 300px;
+    margin: 0 auto;
+}
+
+/* Creacion de botones */
+
+#buttonNavbar {
+    background-color: white;
+    border-radius: 30px;
+    padding: 0.4em 1.5em;
+    height: 2.5em;
+    border: 2px solid black;
+    font-size: 0.86em;
+    width: 8em;
+    height: 2.8em;
+}
+#buttonNavbar:hover { 
+    color: white; 
+    transition-duration: 300ms;
+    background-color: black;
+}
+
+#buttonContactenos{
+    background-color: white;
+    border-radius: 30px;
+    padding: 0.4em 1.5em;
+    height: 2.5em;
+    border: 2px solid rgb(0, 0, 0);
+    font-size: 0.86em;
+    width: 9.5em;
+    height: 2.8em;
+}
+#buttonContactenos:hover { 
+    color: white; 
+    transition-duration: 300ms;
+    background-color: black;
+}
+
+#buttonSumateVioleta {
+    background-color: white;
+    color: #6B53F0;
+    border-radius: 30px;
+    padding: 0.4em 1.5em;
+    height: 2.5em;
+    border: 2px solid #6B53F0;
+    font-size: 0.86em;
+    width: 8em;
+    height: 2.8em;
+}
+#buttonSumateVioleta:hover { 
+    color: white; 
+    transition-duration: 300ms;
+    background-color: #6B53F0;
+}
+/* hasta aca Creacion de botones */
+
+
+
+
+.row-footer{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-column-gap: 20px;
+    margin-left: 14%;
+    margin-right: 10%;
+    margin-top: 2%;
+    text-align: left;
+    bottom: unset;
+    width: 100;
+}
+
+.col-md-2{
+    margin-top:30px;
+    width: 100px; 
+}
+
+.col-frase{
+    margin-top:30px;
+    width: 100%;
+    height: auto;
+    font-size: 0.7em;
+}
+
+.container-Nosotros {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 50px;
+}
+
+/*fraja impacto*/
+.franja-impacto{
+    background-color:#201B24;
+    align-items: center;
+    color: white;
+    height: 300px;
+    padding: 20px;
+
+}
+
+.grid-layaut-impacto {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: 300px;
+    margin-top: 50px;
+}
+
+.caja-impacto {
+    width: 25%;
+    text-align: center;
+    margin: 10px;
+}
+
+/*final fraja impacto*/
+.imagen-fondo{
+    background :url(./images/twp-home.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 60em;
+}
+
+/*Programas*/
+.grid-programas{
+    display: flex;
+    justify-content: center;
+}
+.caja-programas-imagen{
+    text-align: left;
+    display: grid;
+}
+
+.caja-programas-texto{
+    width: 400px;
+}
+
+
+
+
+.grid-robotica{
+        display: flex;
+        justify-content: center;
+}
+.caja-robotica{
+    text-align: center;
+    line-height: 150px;
+    border: 4px solid black;
+    display: grid;
+}
+
+.grid-capacitaciones{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.caja-capacitaciones{
+    text-align: center;
+    line-height: 150px;
+    border: 4px solid black;
+    display: grid;
+}
+
+.grid-seguridad{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.caja-seguridad{
+    text-align: center;
+    line-height: 150px;
+    border: 4px solid black;
+    display: grid;
+}
+
+/*Fin de programas*/
+
+
+/*Footer*/
+.container-footer {
+    display: flexbox;
+    height: 170px;   
+    color:white; 
+    max-width: max-content;
+    background-color: #201B24;  
+    bottom: 0;
+    justify-content:center;
+}
+
+/*Fin del footer*/
+  
+/* Etapa para que sea responsivo*/
+@media only screen and (max-width: 768px) {
+    header {
+      flex-direction: column;
+      align-items: center;
+      padding: 0.5rem;
+      border-bottom: 1px solid white
+    }
+    
+    #navbar {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 12rem;
+    }
+    
+    #navbar-left {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 0.5rem;
+    }
+    
+    #navbar-right {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-top: 1px solid black 
+    }
+    #navbar-left img {
+        margin-top: 1.2em;  
+        margin-right:500px;
+        
+    }
+    #navbar-right span {
+      margin: 0.5rem 0;
+    }
+   
+      .imagen-fondo{
+        background-image:none;
+      }
+      .grid-layaut-impacto {
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+        height: max-content;
+      }
+      
+      .caja-impacto {
+        width: 80%;
+        height: 100px;
+      }
+      footer {
+        display: grid;
+        text-align:center;
+        width: 80%;
+        margin: 0 auto;
+      }
+      
+  }
+@media (width >= 2500px) {
+    html {
+        font-size: 28px;
+    }
+}
+
+@media (width >= 3500px) {
+    html {
+        font-size: 32px;
+    }
+}
